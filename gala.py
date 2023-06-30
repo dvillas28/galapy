@@ -365,36 +365,6 @@ class Scoreboard():
 
         self.ships.draw(self.screen)
 
-class PowerUp(pg.sprite.Sprite):
-    # Sprite que al colisionar con la nave, genera algun efecto
-    def __init__(self, settings, screen):
-        super().__init__()
-        
-        self.settings = settings
-        self.screen = screen
-        self.screen_rect = self.screen.get_rect()
-
-        self.image = pg.image.load("enemy.png") # TODO añadir imagen de pwrp
-        
-        self.rect = self.image.get_rect()
-        
-        # definir su area de aparicion y una velocidad de bajada (o subida)
-        # el eje x debe ser entre el rango donde se mueve la nave, una pos random
-        # el eje y debe ser 0 o el ancho de la pantalla
-
-        # 2: por desttuir un alien ,- aparecen horizontalmente (programar como zz)
-
-        # definir una probabilidad de spawn de un pwrp
-        
-        self.appear = False
-
-    def blitme(self):
-        self.screen.blit(self.image, self.rect)
-
-    def generate_powerup(self):
-        if self.appear:
-            pass
-
 class GalaPy(): 
 
     "Metodos de inicio de objetos y loop del juego"    
