@@ -5,8 +5,8 @@
 - Los sprites son de Galaga
 
 ## Controles
-- w-a-s-d: move
-- space: shoot
-- o: reset highscore
-- p/0: play
-- esc: quit
+- ```w-a-s-d```: move
+- ```space```: shoot
+- ```o```: reset highscore
+- ```p/0```: play
+- ```esc```: quit
