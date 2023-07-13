@@ -4,7 +4,7 @@ class Stats():
         self.settings = settings
         self.reset_stats()
 
-        arch = open('galapyhg.txt', 'r')
+        arch = open('Galapy/galapyhg.txt', 'r')
         self.highscore = int(arch.readline().strip()) # este valor no deberia cambiar
         arch.close()
         self.running = True

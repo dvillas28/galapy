@@ -391,7 +391,7 @@ class GalaPy():
         # va al final
     
     def overwrite_highscore(self):
-        arch = open("galapyhg.txt", 'w')
+        arch = open("Galapy/galapyhg.txt", 'w')
         print(str(int(self.stats.highscore)), file = arch)
         arch.close()
 
