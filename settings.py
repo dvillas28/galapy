@@ -1,4 +1,5 @@
 import pygame as pg
+from os import path
 
 class Settings(): 
     def __init__(self):
@@ -13,7 +14,7 @@ class Settings():
 
         self.lives = 3
         self.enemies_killed_for_life = 100
-        self.level_up_sound = pg.mixer.Sound('sound/level_up.mp3')
+        self.level_up_sound = pg.mixer.Sound(path.join('sound', 'level_up.mp3'))
         self.level_up_sound.set_volume(0.5)
 
         self.level_cap = 12
